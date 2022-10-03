@@ -7,7 +7,6 @@ const Home: NextPage = () => {
   if (!list) {
     return <div>Loading...</div>;
   }
-
   return (
     <>
       {list.map((inscription) => {

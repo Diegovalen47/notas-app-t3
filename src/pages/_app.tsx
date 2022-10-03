@@ -7,6 +7,7 @@ import superjson from "superjson";
 import Navbar from "../components/Navbar";
 import type { AppRouter } from "../server/router";
 import "../styles/globals.scss";
+import "../styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (

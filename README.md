@@ -5,3 +5,4 @@ Using:
 - tRPC
 - Bulma
 - Sass
+- TailwindCSS
