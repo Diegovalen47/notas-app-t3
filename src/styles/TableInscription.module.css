@@ -1,0 +1,30 @@
+.contenedor {
+  --backgroundColor: #000000;
+  --textColor: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  padding: 0 50px 0 50px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  border: 0.3em solid #ffffff;
+  border-radius: 1em;
+}
+
+.columna {
+  flex: 1;
+  padding: 0 1em 0 1em;
+}
+
+.tableBorders {
+  border: 0.3em solid #ffffff;
+  border-radius: 1em;
+}
+
+
