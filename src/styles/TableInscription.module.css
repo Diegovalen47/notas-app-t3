@@ -1,30 +1,59 @@
+.loading {
+  /* Color pallete 1 */
+  --gray: #DBD8E3;
+  --purple: #5C5470;
+  --purple-dark: #352F44;
+  --purple-darker: #2A2438;
+  --black: #272525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--purple-darker);
+  color: var(--gray);
+  font-size: 7em;
+}
+
 .contenedor {
-  --backgroundColor: #000000;
-  --textColor: #ffffff;
+  /* Color pallete 1 */
+  --gray: #DBD8E3;
+  --purple: #5C5470;
+  --purple-dark: #352F44;
+  --purple-darker: #2A2438;
+  --black: #272525;
   display: flex;
   flex-direction: column;
-  background-color: var(--backgroundColor);
-  color: var(--textColor);
+  background-color: var(--purple-darker);
+  color: var(--gray);
   padding: 0 50px 0 50px;
+}
+
+.tableHeader {
+  background-color: var(--black);
+  color: var(--gray);
+}
+
+.tableHeader .columna {
+  color: var(--gray);
 }
 
 .fila {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 1em 0 1em 0;
-  border: 0.3em solid #ffffff;
-  border-radius: 1em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.fila:nth-child(even) {
+  background-color: var(--purple-dark);
 }
 
 .columna {
   flex: 1;
-  padding: 0 1em 0 1em;
 }
 
-.tableBorders {
-  border: 0.3em solid #ffffff;
-  border-radius: 1em;
+.columna:hover {
+  background-color: var(--purple);
 }
 
 

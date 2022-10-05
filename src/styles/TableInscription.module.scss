@@ -1,0 +1,54 @@
+  /* Color pallete 1 */
+  $gray: #DBD8E3;
+  $purple: #5C5470;
+  $purple-dark: #352F44;
+  $purple-darker: #2A2438;
+  $black: #272525;
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $purple-darker;
+  color: $gray;
+  font-size: 7em;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: $purple-darker;
+  color: $gray;
+  padding: 0 50px 0 50px;
+}
+
+.tableHeader {
+  background-color: $black;
+  color: $gray;
+}
+
+.tableHeader .columna {
+  color: $gray;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.fila:nth-child(even) {
+  background-color: $purple-dark;
+}
+
+.columna {
+  flex: 1;
+}
+
+.columna:hover {
+  background-color: $purple;
+}
+
+

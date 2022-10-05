@@ -1,15 +1,15 @@
 import { NextComponentType } from "next";
 import { trpc } from "../utils/trpc";
-import styles from "../styles/TableInscription.module.css";
+import styles from "../styles/TableInscription.module.scss";
 
 const TableInscription: NextComponentType = () => {
   const { data: list, refetch } = trpc.useQuery(["inscription.findAll"]);
   if (!list) {
-    return <div>Loading...</div>;
+    return <div className={`${styles.loading}`}>Loading...</div>;
   }
   return (
     <table className={`${styles.contenedor}`}>
-      <tr className={`${styles.fila} ${styles.tableBorders}`}>
+      <tr className={`${styles.fila} ${styles.tableHeader}`}>
         <th className={styles.columna}>Asignatura</th>
         <th className={styles.columna}>Creditos</th>
         <th className={styles.columna}>Tipologia</th>
@@ -24,7 +24,7 @@ const TableInscription: NextComponentType = () => {
             <td className={styles.columna}>
               {`${inscription.semester.year} 
                 ${inscription.semester.period}
-                ${inscription.semester.number}`}
+                (${inscription.semester.number})`}
             </td>
           </tr>
         );

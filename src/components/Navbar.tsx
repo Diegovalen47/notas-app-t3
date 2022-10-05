@@ -7,22 +7,27 @@ const Navbar: NextComponentType = () => {
       <ul className="flex">
         <li className="mr-6">
           <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            Active
+            Asignaturas
           </a>
         </li>
         <li className="mr-6">
           <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            Link
+            Resumen Carrera
           </a>
         </li>
         <li className="mr-6">
           <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            Link
+            Promedio por materia
           </a>
         </li>
         <li className="mr-6">
-          <a className="cursor-not-allowed text-gray-400" href="#">
-            Disabled
+          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
+            Promedio por semestre
+          </a>
+        </li>
+        <li className="mr-6">
+          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
+            P.A.P.A
           </a>
         </li>
       </ul>
