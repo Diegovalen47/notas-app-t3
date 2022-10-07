@@ -1,4 +1,5 @@
 import { NextComponentType } from "next";
+import Link from "next/link";
 
 const Navbar: NextComponentType = () => {
   const itemsTextColor = "text-white";
@@ -6,29 +7,29 @@ const Navbar: NextComponentType = () => {
     <nav className="sticky top-0 bg-zinc-900 p-5 shadow-blue-600 drop-shadow">
       <ul className="flex">
         <li className="mr-6">
-          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
+          <Link href={"/"} className={`${itemsTextColor} hover:text-blue-800`}>
             Asignaturas
-          </a>
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
+          <Link href={"/ResumenCarrera"} className={`${itemsTextColor} hover:text-blue-800`}>
             Resumen Carrera
-          </a>
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            Promedio por materia
-          </a>
+          <Link href={"/ResumenCarrera"} className={`${itemsTextColor} hover:text-blue-800`}>
+            Promedio por Materia
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            Promedio por semestre
-          </a>
+          <Link href={"/ResumenCarrera"} className={`${itemsTextColor} hover:text-blue-800`}>
+            Promedio por Semestre
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={`${itemsTextColor} hover:text-blue-800`} href="#">
-            P.A.P.A
-          </a>
+          <Link href={"/ResumenCarrera"} className={`${itemsTextColor} hover:text-blue-800`}>
+            PAPA
+          </Link>
         </li>
       </ul>
     </nav>
